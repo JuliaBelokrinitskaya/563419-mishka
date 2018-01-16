@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Белокриницкая](https://up.htmlacademy.ru/adaptive/13/user/563419).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко](https://up.htmlacademy.ru/adaptive/13/user/13921).
 
 ---
 
