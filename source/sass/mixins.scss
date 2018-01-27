@@ -1,0 +1,24 @@
+@mixin font($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin font-set($size, $line-height, $weight) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin background-image($color, $url, $x: center, $y: top) {
+  background-color: $color;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: $x $y;
+}

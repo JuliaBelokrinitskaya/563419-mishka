@@ -1,4 +1,16 @@
 @import "variables";
 @import "mixins";
-@import "blocks/normalize";
-@import "blocks/scaffolding";
+@import "normalize";
+@import "fonts";
+@import "scaffolding";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+
+// html {
+//   background-color: blue;
+
+//   background-image: url("../img/prev-index.jpg");
+//   background-repeat: no-repeat;
+//   background-position: top left;
+//   opacity: 0.5;
+// }

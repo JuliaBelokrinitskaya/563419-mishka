@@ -1,0 +1,44 @@
+.main-nav {
+  @include font-set($important-text, $paragraph-normal, $bold-weight);
+  color: $secondary-color;
+
+  background-color: $primary-bg;
+  box-shadow: inset 0 1px 0 $primary-border;
+  outline: 1px solid $primary-border;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  box-shadow:
+    0 1px 0 $primary-border,
+    inset 0 1px 0 $primary-border;
+}
+
+.main-nav__link {
+  display: block;
+
+  box-sizing: border-box;
+  min-height: 79px;
+  padding-top: 26.5px;
+  padding-left: 76px;
+
+  text-decoration: none;
+  color: $secondary-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+}
