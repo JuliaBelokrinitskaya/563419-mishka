@@ -1,0 +1,30 @@
+.btn {
+  display: block;
+
+  box-sizing: border-box;
+  min-height: 52px;
+  padding-top: 15px;
+
+  @include font-set($important-text, $paragraph-dense, $bold-weight);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  background-color: $primary-bg;
+  border: 2px solid $primary-btn;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $contrast-color;
+
+    background-color: $primary-btn;
+  }
+
+  &:active {
+    color: rgba($contrast-color, 0.3);
+
+    background-color: $primary-btn;
+  }
+}

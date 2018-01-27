@@ -1,18 +1,23 @@
 $black: #000000;
 $white: #ffffff;
+$main-green: #63d1bb;
+$main-grey: #444444;
 
-$primary-color: #444444;
+$primary-color: $main-grey;
 $secondary-color: $black;
 $contrast-color: $white;
+$colorful-text: $main-green;
 
 $primary-bg: $white;
 $secondary-bg: #f1f1f1;
-$colorful-bg-primary: #63d1bb;
+$colorful-bg-primary: $main-green;
 $colorful-bg-primary-hover: #59d5bc;
 $colorful-bg-secondary: #56c3b2;
 $colorful-bg-secondary-hover: #46c1ae;
 
 $primary-border: #ececec;
+
+$primary-btn: $main-grey;
 
 $font-primary: "Open Sans", "Arial", serif;
 

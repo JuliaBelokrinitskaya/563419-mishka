@@ -21,8 +21,8 @@
     background-color: $colorful-bg-primary;
 
     &:hover,
-    &:active,
-    &:focus {
+    &:focus,
+    &:active {
       background-color: $colorful-bg-primary-hover;
     }
   }
