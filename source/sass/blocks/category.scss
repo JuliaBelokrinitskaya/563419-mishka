@@ -1,0 +1,53 @@
+.category__list {
+  @include list-reset;
+}
+
+.category__link {
+  display: block;
+
+  box-sizing: border-box;
+  min-height: 103px;
+  padding-top: 25px;
+  padding-left: $main-padding;
+
+  @include font-set(19px, $paragraph-normal, $bold-weight);
+  text-decoration: none;
+  color: $contrast-color;
+
+  background-color: $colorful-bg-primary;
+  outline: none;
+
+  &--interior {
+    background-color: $colorful-bg-primary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $colorful-bg-primary-hover;
+    }
+  }
+
+  &--toys {
+    background-color: $colorful-bg-secondary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $colorful-bg-secondary-hover;
+    }
+  }
+}
+
+.category__link span {
+  display: block;
+
+  width: 130px;
+}
+
+.category__link:active span {
+  opacity: 0.3;
+}
+
+.category__link:focus span {
+  opacity: 0.5;
+}
