@@ -5,26 +5,26 @@
   min-height: 52px;
   padding-top: 15px;
 
-  @include font-set($important-text, $paragraph-dense, $bold-weight);
+  @include font-set($text-important, $lh-dense, $weight-bold);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: $primary-color;
+  color: $color-btn;
 
-  background-color: $primary-bg;
-  border: 2px solid $primary-btn;
+  background-color: $color-bg-primary;
+  border: 2px solid $color-btn;
   outline: none;
 
   &:hover,
   &:focus {
-    color: $contrast-color;
+    color: $color-contrast;
 
-    background-color: $primary-btn;
+    background-color: $color-btn;
   }
 
   &:active {
-    color: rgba($contrast-color, 0.3);
+    color: rgba($color-contrast, 0.3);
 
-    background-color: $primary-btn;
+    background-color: $color-btn;
   }
 }

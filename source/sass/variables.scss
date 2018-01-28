@@ -1,37 +1,41 @@
-$black: #000000;
-$white: #ffffff;
-$main-green: #63d1bb;
-$main-grey: #444444;
+$padding-content: 30px;
 
-$primary-color: $main-grey;
-$secondary-color: $black;
-$contrast-color: $white;
-$colorful-text: $main-green;
-
-$primary-bg: $white;
-$secondary-bg: #f1f1f1;
-$colorful-bg-primary: $main-green;
-$colorful-bg-primary-hover: #59d5bc;
-$colorful-bg-secondary: #56c3b2;
-$colorful-bg-secondary-hover: #46c1ae;
-
-$primary-border: #ececec;
-
-$primary-btn: $main-grey;
 
 $font-primary: "Open Sans", "Arial", serif;
 
-$small-text: 13px;
-$main-text: 15px;
-$important-text: 17px;
-$section-text: 25px;
-$header-text: 27px;
+$text-small: 13px;
+$text-primary: 15px;
+$text-important: 17px;
+$text-section: 25px;
+$text-header: 27px;
 
-$paragraph-dense: 20px;
-$paragraph-normal: 24px;
-$paragraph-loose: 30px;
+$lh-dense: 20px;
+$lh-normal: 24px;
+$lh-loose: 30px;
 
-$normal-weight: 400;
-$bold-weight: 700;
+$weight-normal: 400;
+$weight-bold: 700;
 
-$main-padding: 30px;
+
+$black: #000000;
+$white: #ffffff;
+
+$color-primary: #63d1bb;
+$color-secondary: #444444;
+
+$color-paragraph: $color-secondary;
+$color-header: $black;
+$color-important: $black;
+$color-contrast: $white;
+
+$color-bg-primary: $white;
+$color-bg-secondary: #f1f1f1;
+
+$color-border-primary: #ececec;
+
+$color-btn: $color-secondary;
+
+$color-category-interior: $color-primary;
+$color-category-interior-hover: #59d5bc;
+$color-category-toys: #56c3b2;
+$color-category-toys-hover: #46c1ae;

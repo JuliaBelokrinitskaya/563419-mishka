@@ -1,5 +1,5 @@
 .main-header__top {
-  background-color: $primary-bg;
+  background-color: $color-bg-primary;
 }
 
 .main-header__logo {
@@ -21,10 +21,10 @@
   box-sizing: border-box;
   min-height: 177px;
   padding-top: 70px;
-  padding-left: $main-padding;
-  padding-right: $main-padding;
+  padding-left: $padding-content;
+  padding-right: $padding-content;
 
-  background-color: $secondary-bg;
+  background-color: $color-bg-secondary;
 
   &--image {
     min-height: 283px;
@@ -36,7 +36,7 @@
 .main-header__title {
   margin: 0;
 
-  @include font-set($header-text, $paragraph-loose, $bold-weight);
+  @include font-set($text-header, $lh-loose, $weight-bold);
   text-align: center;
-  color: $secondary-color;
+  color: $color-header;
 }

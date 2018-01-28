@@ -5,8 +5,8 @@
 .featured-product__wrapper {
   padding-top: 27px;
   padding-bottom: 42px;
-  padding-right: $main-padding;
-  padding-left: $main-padding;
+  padding-right: $padding-content;
+  padding-left: $padding-content;
 }
 
 .featured-product__header {
@@ -16,16 +16,16 @@
 .featured-product__title {
   margin: 0 0 2.5px;
 
-  @include font-set($section-text, $paragraph-loose, $bold-weight);
-  color: $secondary-color;
+  @include font-set($text-section, $lh-loose, $weight-bold);
+  color: $color-header;
 }
 
 .featured-product__label {
   margin: 0;
 
-  @include font-set($important-text, $paragraph-normal, $bold-weight);
+  @include font-set($text-important, $lh-normal, $weight-bold);
   text-transform: uppercase;
-  color: $colorful-text;
+  color: $color-primary;
 }
 
 .featured-product__info {
@@ -41,7 +41,7 @@
   margin: 0;
   padding: 0;
 
-  line-height: $paragraph-dense;
+  line-height: $lh-dense;
 
   border-collapse: collapse;
   border-spacing: 0;
@@ -54,13 +54,13 @@
 
   text-align: left;
 
-  border-bottom: 1px solid $primary-border;
+  border-bottom: 1px solid $color-border-primary;
 }
 
 .featured-product__data-label {
   width: 98px;
 
-  font-weight: $normal-weight;
+  font-weight: $weight-normal;
 }
 
 .featured-product__photo {
@@ -72,6 +72,6 @@
 .featured-product__price {
   margin: 0 0 26px;
 
-  @include font-set($important-text, $paragraph-normal, $bold-weight);
+  @include font-set($text-important, $lh-normal, $weight-bold);
   text-align: center;
 }

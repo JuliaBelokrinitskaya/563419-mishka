@@ -8,32 +8,37 @@
   box-sizing: border-box;
   min-height: 103px;
   padding-top: 25px;
-  padding-left: $main-padding;
+  padding-left: $padding-content;
 
-  @include font-set(19px, $paragraph-normal, $bold-weight);
+  @include font-set(19px, $lh-normal, $weight-bold);
   text-decoration: none;
-  color: $contrast-color;
+  color: $color-contrast;
 
-  background-color: $colorful-bg-primary;
+  background-color: $color-primary;
   outline: none;
 
+  &:focus,
+  &:active {
+    color: rgba($color-contrast, 0.3);
+  }
+
   &--interior {
-    background-color: $colorful-bg-primary;
+    background-color: $color-category-interior;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: $colorful-bg-primary-hover;
+      background-color: $color-category-interior-hover;
     }
   }
 
   &--toys {
-    background-color: $colorful-bg-secondary;
+    background-color: $color-category-toys;
 
     &:hover,
-    &:active,
-    &:focus {
-      background-color: $colorful-bg-secondary-hover;
+    &:focus,
+    &:active {
+      background-color: $color-category-toys-hover;
     }
   }
 }
@@ -42,12 +47,4 @@
   display: block;
 
   width: 130px;
-}
-
-.category__link:active span {
-  opacity: 0.3;
-}
-
-.category__link:focus span {
-  opacity: 0.5;
 }

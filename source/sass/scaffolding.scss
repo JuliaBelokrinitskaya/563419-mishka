@@ -11,12 +11,12 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  @include font-set($main-text, 1.6, $normal-weight);
+  @include font-set($text-primary, 1.6, $weight-normal);
   font-family: $font-primary;
   word-wrap: break-word;
-  color: $primary-color;
+  color: $color-paragraph;
 
-  // background-color: $primary-bg;
+  // background-color: ;
 }
 
 img {

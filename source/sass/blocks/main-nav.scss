@@ -1,10 +1,10 @@
 .main-nav {
-  @include font-set($important-text, $paragraph-normal, $bold-weight);
-  color: $secondary-color;
+  @include font-set($text-important, $lh-normal, $weight-bold);
+  color: $color-important;
 
-  background-color: $primary-bg;
-  box-shadow: inset 0 1px 0 $primary-border;
-  outline: 1px solid $primary-border;
+  background-color: $color-bg-primary;
+  box-shadow: inset 0 1px 0 $color-border-primary;
+  outline: 1px solid $color-border-primary;
 }
 
 .main-nav__toggle {
@@ -17,8 +17,8 @@
 
 .main-nav__item {
   box-shadow:
-    0 1px 0 $primary-border,
-    inset 0 1px 0 $primary-border;
+    0 1px 0 $color-border-primary,
+    inset 0 1px 0 $color-border-primary;
 }
 
 .main-nav__link {
@@ -30,7 +30,7 @@
   padding-left: 76px;
 
   text-decoration: none;
-  color: $secondary-color;
+  color: $color-important;
 
   &:hover {
     opacity: 0.6;
