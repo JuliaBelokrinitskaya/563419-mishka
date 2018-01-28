@@ -1,0 +1,23 @@
+.review {
+  margin: 0 0 29px;
+  padding: 0;
+
+  line-height: $lh-loose;
+}
+
+.review__text {
+  margin-bottom: 25px;
+}
+
+.review__author {
+  font-style: normal;
+}
+
+.review__author-name {
+  @include font-set($text-important, $lh-normal, $weight-bold);
+  color: $color-important;
+}
+
+.review__author-nick {
+  @include font-set($text-important, $lh-loose, $weight-normal);
+}

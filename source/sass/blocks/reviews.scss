@@ -1,0 +1,27 @@
+.reviews {
+  width: 320px;
+}
+
+.reviews__wrapper {
+  padding-top: 26px;
+  padding-right: $padding-content;
+  padding-bottom: 51px;
+  padding-left: $padding-content;
+}
+
+.reviews__title {
+  margin: 0 0 23px;
+
+  @include font-set($text-section, $lh-loose, $weight-bold);
+  color: $color-header;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__btn {
+  padding-top: 14px;
+
+  font-size: 18px;
+}

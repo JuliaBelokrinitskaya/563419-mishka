@@ -6,14 +6,16 @@
 @import "blocks/main-header";
 @import "blocks/main-nav";
 @import "blocks/btn";
+@import "blocks/slider";
 @import "blocks/category";
 @import "blocks/featured-product";
 @import "blocks/advantages";
-
+@import "blocks/reviews";
+@import "blocks/review";
 
 // html {
 //   background-color: blue;
 
-//   @include background-image(null, "../img/prev-index.jpg", left)
+//   @include background-image(null, "../img/prev-index.jpg", left);
 //   opacity: 0.5;
 // }
