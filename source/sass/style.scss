@@ -8,13 +8,12 @@
 @import "blocks/btn";
 @import "blocks/category";
 @import "blocks/featured-product";
+@import "blocks/advantages";
 
 
 // html {
 //   background-color: blue;
 
-//   background-image: url("../img/prev-index.jpg");
-//   background-repeat: no-repeat;
-//   background-position: top left;
+//   @include background-image(null, "../img/prev-index.jpg", left)
 //   opacity: 0.5;
 // }
