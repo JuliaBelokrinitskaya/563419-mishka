@@ -32,10 +32,14 @@ $color-bg-primary: $white;
 $color-bg-secondary: #f1f1f1;
 
 $color-border-primary: #ececec;
+$color-border-secondary: #e5e5e5;
 
 $color-btn: $color-secondary;
+
+$color-interactive-primary: #62d1ba;
+$color-interactive-secondary: #46c1ae;
 
 $color-category-interior: $color-primary;
 $color-category-interior-hover: #59d5bc;
 $color-category-toys: #56c3b2;
-$color-category-toys-hover: #46c1ae;
+$color-category-toys-hover: $color-interactive-secondary;
