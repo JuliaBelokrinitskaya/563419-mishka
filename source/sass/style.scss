@@ -19,10 +19,12 @@
 @import "blocks/reviews";
 @import "blocks/review";
 @import "blocks/contacts";
+@import "blocks/catalog";
+@import "blocks/product";
 
 html {
-  background-color: blue;
+  // width: 320px;
 
-  // @include background-image(null, "../img/prev-modal.jpg", 0%, 3870px);
+  // @include background-image(null, "../img/prev-catalog.jpg", left);
   // opacity: 0.5;
 }

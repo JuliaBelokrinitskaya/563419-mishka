@@ -32,12 +32,12 @@
   text-decoration: none;
   color: $color-important;
 
-  &:hover {
+  &:hover[href] {
     opacity: 0.6;
   }
 
-  &:focus,
-  &:active {
+  &:focus[href],
+  &:active[href] {
     opacity: 0.3;
     outline: none;
   }
