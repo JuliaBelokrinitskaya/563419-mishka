@@ -10,6 +10,9 @@
 @import "blocks/copyright";
 @import "blocks/btn";
 @import "blocks/slider";
+@import "blocks/modal";
+@import "blocks/modal--to-cart";
+@import "blocks/to-cart-form";
 @import "blocks/category";
 @import "blocks/featured-product";
 @import "blocks/advantages";
@@ -17,9 +20,9 @@
 @import "blocks/review";
 @import "blocks/contacts";
 
-// html {
-//   background-color: blue;
+html {
+  background-color: blue;
 
-//   @include background-image(null, "../img/prev-index.jpg", left);
-//   opacity: 0.5;
-// }
+  // @include background-image(null, "../img/prev-modal.jpg", 0%, 3870px);
+  // opacity: 0.5;
+}
