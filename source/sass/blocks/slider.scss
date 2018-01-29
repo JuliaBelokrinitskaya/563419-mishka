@@ -1,0 +1,22 @@
+.slider__controls {
+  display: flex;
+
+  margin-bottom: 38px;
+}
+
+.slider__control {
+  flex-grow: 1;
+
+  height: 52px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border-primary;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__control--previous {
+  border-right: none;
+}

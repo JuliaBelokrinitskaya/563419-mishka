@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "fonts";
+@import "scaffolding";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/main-content";
+@import "blocks/main-footer";
+@import "blocks/page-text";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/btn";
+@import "blocks/slider";
+@import "blocks/modal";
+@import "blocks/modal--to-cart";
+@import "blocks/to-cart-form";
+@import "blocks/category";
+@import "blocks/featured-product";
+@import "blocks/advantages";
+@import "blocks/reviews";
+@import "blocks/review";
+@import "blocks/contacts";
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/video";
+@import "blocks/order-form";
+
+html {
+  // width: 320px;
+
+  // @include background-image(null, "../img/prev-form.jpg", left);
+  // opacity: 0.5;
+}

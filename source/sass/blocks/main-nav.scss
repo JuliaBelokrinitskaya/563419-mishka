@@ -1,0 +1,44 @@
+.main-nav {
+  @include font-set($text-important, $lh-normal, $weight-bold);
+  color: $color-important;
+
+  background-color: $color-bg-primary;
+  box-shadow: inset 0 1px 0 $color-border-primary;
+  outline: 1px solid $color-border-primary;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  box-shadow:
+    0 1px 0 $color-border-primary,
+    inset 0 1px 0 $color-border-primary;
+}
+
+.main-nav__link {
+  display: block;
+
+  box-sizing: border-box;
+  min-height: 79px;
+  padding-top: 26.5px;
+  padding-left: 76px;
+
+  text-decoration: none;
+  color: $color-important;
+
+  &:hover[href] {
+    opacity: 0.6;
+  }
+
+  &:focus[href],
+  &:active[href] {
+    opacity: 0.3;
+    outline: none;
+  }
+}

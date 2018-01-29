@@ -1,0 +1,139 @@
+.order-form {
+  padding-right: $padding-content;
+  padding-left: $padding-content;
+}
+
+.order-form__fieldset {
+  margin: 0 0 10px;
+  padding: 0;
+
+  border: 0;
+}
+
+.order-form__fieldset--singleton {
+  margin-bottom: 32px;
+}
+
+.order-form__title {
+  margin-bottom: 26px;
+
+  @include font-set($text-important, 16px, $weight-bold);
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.order-form__fieldset--singleton .order-form__title {
+  margin-bottom: 7px;
+}
+
+.order-form__list {
+  @include list-reset;
+}
+
+.order-form__input-radio,
+.order-form__input-check {
+  @include visually-hidden;
+}
+
+.order-form__label-radio,
+.order-form__label-check {
+  display: block;
+
+  box-sizing: border-box;
+  padding-left: 63px;
+
+  @include font-set($text-important, 18px, $weight-bold);
+  color: $color-important;
+}
+
+.order-form__label-radio {
+  min-height: 60px;
+  padding-top: 8px;
+}
+
+.order-form__label-check {
+  min-height: 61px;
+  padding-top: 10px;
+}
+
+.order-form__field {
+  margin: 0 0 20px;
+}
+
+.order-form__label {
+  display: block;
+
+  padding-top: 2px;
+
+  @include font-set($text-important, 18px, $weight-bold);
+  color: $color-important;
+}
+
+.order-form__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 52px;
+  margin: 0;
+  padding: 0 0 3px;
+
+  @include font-set($text-important, 18px, $weight-normal);
+  font-family: inherit;
+  color: $color-paragraph;
+
+  background-color: $color-bg-primary;
+  border: 0;
+  box-shadow: inset 0 -2px 0 $color-important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 $color-interactive-primary;
+  }
+}
+
+.order-form__textarea {
+  display: block;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 142px;
+  padding: 15px;
+
+  @include font-set($text-important, 18px, $weight-normal);
+  font-family: inherit;
+  color: $color-paragraph;
+
+  background-color: $color-bg-primary;
+  border: 2px solid $color-btn;
+  resize: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $color-interactive-primary;
+  }
+}
+
+.order-form__input::placeholder,
+.order-form__textarea::placeholder {
+  color: $color-paragraph;
+
+  opacity: 0.3;
+}
+
+.order-form__footer {
+  padding-top: 6px;
+  margin-bottom: 55px;
+}
+
+.order-form__note {
+  display: block;
+  margin-bottom: 31px;
+
+  @include font(14px, 16px);
+}
+
+.order-form__btn {
+  width: 100%;
+  padding: 0;
+}

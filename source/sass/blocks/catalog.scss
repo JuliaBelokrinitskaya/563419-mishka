@@ -1,0 +1,17 @@
+.catalog {
+  padding-top: 30px;
+  padding-right: $padding-content;
+  padding-left: $padding-content;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include list-reset;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}

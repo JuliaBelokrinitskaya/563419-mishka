@@ -1,0 +1,27 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+
+  @include font-set($text-primary, 1.6, $weight-normal);
+  font-family: $font-primary;
+  word-wrap: break-word;
+  color: $color-paragraph;
+
+  background-color: $color-bg-primary;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

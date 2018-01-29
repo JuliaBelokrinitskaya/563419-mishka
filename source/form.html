@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Вязание на заказ — Интернет-магазин «Мишка»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -99,7 +100,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--singleton">
           <legend class="order-form__title">Тел</legend>
           <div class="order-form__wrapper">
             <label class="visually-hidden" for="customer-phone">Телефон:</label>
@@ -107,7 +108,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--singleton">
           <legend class="order-form__title">E-mail</legend>
           <div class="order-form__wrapper">
             <label class="visually-hidden" for="customer-email">E-mail:</label>
@@ -115,7 +116,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset">
           <legend class="order-form__title">Доп</legend>
           <div class="order-form__wrapper">
             <label class="visually-hidden" for="customer-notes">Дополнительная информация:</label>
@@ -133,13 +134,19 @@
     <footer class="main-footer">
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
         </li>
       </ul>
 

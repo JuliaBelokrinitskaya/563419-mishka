@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -29,7 +30,7 @@
         </nav>
       </div>
       <div class="main-header__bottom main-header__bottom--image">
-        <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+        <h1 class="main-header__title">Милые штуки ручной<br> работы для дома</h1>
       </div>
     </header>
 
@@ -37,10 +38,14 @@
       <div class="category">
         <ul class="category__list">
           <li class="category__item">
-            <a class="category__link category__link--interior" href="interior.html">Предметы интерьера</a>
+            <a class="category__link category__link--interior" href="interior.html">
+              <span>Предметы интерьера</span>
+            </a>
           </li>
           <li class="category__item">
-            <a class="category__link category__link--toys" href="toys.html">Детские игрушки</a>
+            <a class="category__link category__link--toys" href="toys.html">
+              <span>Детские игрушки</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -93,24 +98,26 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews_wrapper">
+        <div class="reviews__wrapper slider">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="slider">
-            <ul class="reviews__list slider__list">
-              <li class="reviews__item slider__item">
-                <blockquote class="review">
-                  <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                  <cite class="review__author">
-                    <b class="review__author-name">Анастасия Красильникова</b>
-                    <span class="review__author-nick">@misssssiskras</span>
-                  </cite>
-                </blockquote>
-              </li>
-            </ul>
-            <div class="slider__controls">
-              <button class="slider__control slider__control--previous" type="button">Предыдущий отзыв</button>
-              <button class="slider__control slider__control--next" type="button">Следующий отзыв</button>
-            </div>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <blockquote class="review">
+                <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="review__author">
+                  <b class="review__author-name">Анастасия Красильникова</b>
+                  <span class="review__author-nick">@misssssiskras</span>
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <button class="slider__control slider__control--previous" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="slider__control slider__control--next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
           </div>
           <a class="reviews__btn btn" href="review.html">Написать</a>
         </div>
@@ -140,13 +147,19 @@
     <footer class="main-footer">
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
         </li>
       </ul>
 

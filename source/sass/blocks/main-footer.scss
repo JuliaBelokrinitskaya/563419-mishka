@@ -1,0 +1,20 @@
+.main-footer {
+  // width: 320px - 60px;
+  padding-right: $padding-content;
+  padding-left: $padding-content;
+
+  background-color: $color-bg-secondary;
+}
+
+.main-footer__social {
+  min-height: 80px;
+}
+
+.main-footer__copyright {
+  box-sizing: border-box;
+  min-height: 80px;
+  margin: 0;
+  padding-top: 22px;
+
+  box-shadow: inset 0 1px 0 $color-border-secondary;
+}

@@ -1,0 +1,27 @@
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include font-set(19px, 18px, $weight-bold);
+  text-decoration: none;
+  color: $color-important;
+
+  outline: none;
+}
+
+.copyright__text {
+  margin-top: -2px;
+  margin-right: 29.5px;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  margin-right: 2px;
+}
+
+.copyright__link:focus .copyright__text,
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+}

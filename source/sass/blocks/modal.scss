@@ -1,0 +1,51 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 322px;
+  padding-top: 30px;
+  padding-right: $padding-content;
+  padding-left: $padding-content;
+
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal__title {
+  width: 160px;
+  margin-bottom: 12px;
+
+  @include font-set($text-section, $lh-loose, $weight-bold);
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-header;
+}
+
+.modal__text {
+  margin: 0 0 23px;
+
+  line-height: $lh-loose;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.modal__btn {
+  width: 100%;
+  padding: 0;
+
+  line-height: 16px;
+  color: $color-contrast;
+
+  background-color: $color-primary;
+  border-color: $color-primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-btn;
+  }
+}

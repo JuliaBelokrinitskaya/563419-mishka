@@ -1,0 +1,50 @@
+.category__list {
+  @include list-reset;
+}
+
+.category__link {
+  display: block;
+
+  box-sizing: border-box;
+  min-height: 103px;
+  padding-top: 25px;
+  padding-left: $padding-content;
+
+  @include font-set(19px, $lh-normal, $weight-bold);
+  text-decoration: none;
+  color: $color-contrast;
+
+  background-color: $color-primary;
+  outline: none;
+
+  &:focus,
+  &:active {
+    color: rgba($color-contrast, 0.3);
+  }
+
+  &--interior {
+    background-color: $color-category-interior;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-category-interior-hover;
+    }
+  }
+
+  &--toys {
+    background-color: $color-category-toys;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-category-toys-hover;
+    }
+  }
+}
+
+.category__link span {
+  display: block;
+
+  width: 130px;
+}

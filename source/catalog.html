@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров — Интернет-магазин «Мишка»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -50,7 +51,9 @@
               </div>
               <div class="product__bottom">
                 <b class="product__price">1 200 руб.</b>
-                <a class="product__to-cart" href="order.html">Заказать</a>
+                <a class="product__to-cart" href="order.html">
+                  <span class="visually-hidden">Заказать</span>
+                </a>
               </div>
             </div>
           </li>
@@ -67,7 +70,9 @@
               </div>
               <div class="product__bottom">
                 <b class="product__price">690 руб.</b>
-                <a class="product__to-cart" href="order.html">Заказать</a>
+                <a class="product__to-cart" href="order.html">
+                  <span class="visually-hidden">Заказать</span>
+                </a>
               </div>
             </div>
           </li>
@@ -84,18 +89,22 @@
               </div>
               <div class="product__bottom">
                 <b class="product__price">1 500 руб.</b>
-                <a class="product__to-cart" href="order.html">Заказать</a>
+                <a class="product__to-cart" href="order.html">
+                  <span class="visually-hidden">Заказать</span>
+                </a>
               </div>
             </div>
           </li>
         </ul>
       </section>
 
-      <section class="video">
+      <section class="main-content__video video">
         <h2 class="video__title">Процесс производства</h2>
         <div class="video__player">
           <img class="video__preview" src="http://placehold.it/260x150" width="260" height="150" alt="Видео процесса производства наших товаров">
-          <button class="video__btn-play" type="button">Воспроизвести</button>
+          <button class="video__btn-play" type="button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
         </div>
         <div class="video__bottom">
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -107,13 +116,19 @@
     <footer class="main-footer">
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
         </li>
       </ul>
 

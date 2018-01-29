@@ -1,0 +1,29 @@
+// .advantages {
+//   width: 320px;
+// }
+
+.advantages__wrapper {
+  padding-top: 27px;
+  padding-right: $padding-content;
+  padding-left: $padding-content;
+}
+
+.advantages__title {
+  margin: 0 0 32px;
+
+  @include font-set($text-section, $lh-loose, $weight-bold);
+  color: $color-header;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  box-sizing: border-box;
+  min-height: 123px;
+  padding-top: 54px;
+
+  @include font-set($text-important, $lh-dense, $weight-bold);
+  color: $color-important;
+}
