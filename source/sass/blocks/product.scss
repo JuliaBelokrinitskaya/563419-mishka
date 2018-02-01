@@ -59,7 +59,7 @@
 .product__data {
   margin: 0;
 
-  @include font($text-small, $lh-loose);
+  @include font-set($text-small, $lh-loose);
 }
 
 .product__bottom {

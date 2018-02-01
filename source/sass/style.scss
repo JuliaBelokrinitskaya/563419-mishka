@@ -27,8 +27,8 @@
 @import "blocks/order-form";
 
 html {
-  // width: 320px;
+  width: 320px;
 
-  // @include background-image(null, "../img/prev-form.jpg", left);
-  // opacity: 0.5;
+  @include background-image(null, "../img/prev-form.jpg", left);
+  opacity: 0.5;
 }

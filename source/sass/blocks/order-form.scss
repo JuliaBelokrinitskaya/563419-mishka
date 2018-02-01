@@ -130,7 +130,7 @@
   display: block;
   margin-bottom: 31px;
 
-  @include font(14px, 16px);
+  @include font-set(14px, 16px);
 }
 
 .order-form__btn {

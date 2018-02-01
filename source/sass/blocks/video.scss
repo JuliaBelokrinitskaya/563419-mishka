@@ -57,5 +57,5 @@
 .video__description {
   margin: 0 0 24px;
 
-  @include font($text-small, $lh-normal);
+  @include font-set($text-small, $lh-normal);
 }

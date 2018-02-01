@@ -5,5 +5,5 @@
   padding-bottom: 24px;
   padding-left: $padding-content;
 
-  @include font($text-small, $lh-normal);
+  @include font-set($text-small, $lh-normal);
 }
