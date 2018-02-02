@@ -92,9 +92,8 @@
 
 @media (min-width: $width-desktop) {
   .main-header__top {
-    width: $width-desktop-content;
+    @include desktop-content-box;
     height: 88px;
-    margin: 0 auto;
   }
 
   .main-header__logo {

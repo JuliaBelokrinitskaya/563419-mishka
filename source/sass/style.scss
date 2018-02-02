@@ -27,7 +27,7 @@
 @import "blocks/order-form";
 
 // body {
-//   @include background-image(null, "../img/prev-catalog.jpg", left);
+//   @include background-image(null, "../img/prev-index.jpg", left);
 //   opacity: 0.5;
 // }
 
@@ -35,7 +35,7 @@
 //   body {
 //     width: $width-tablet;
 
-//     @include background-image(null, "../img/prev-catalog-tablet.jpg", center, top);
+//     @include background-image(null, "../img/prev-index-tablet.jpg", center, top);
 //   }
 // }
 
@@ -43,6 +43,6 @@
 //   body {
 //     width: 100%;
 
-//     @include background-image(null, "../img/prev-catalog-desktop.jpg", center, top);
+//     @include background-image(null, "../img/prev-index-desktop.jpg", center, top);
 //   }
 // }

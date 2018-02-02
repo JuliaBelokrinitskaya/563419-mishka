@@ -18,6 +18,12 @@
   background-position: $x $y;
 }
 
+@mixin desktop-content-box {
+  width: $width-desktop-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @mixin visually-hidden {
   position: absolute;
 
