@@ -65,6 +65,14 @@
 
   .main-header__bottom {
     min-height: 226px;
+    padding-top: 95px;
+
+    box-shadow: inset 0 1px 0 0 #e7e7e7;
+
+    &--image {
+      min-height: 746px;
+      padding-top: 154px;
+    }
   }
 
   .main-header__title {
@@ -79,17 +87,6 @@
     margin: -42px 0 0;
 
     text-align: right;
-  }
-
-  .main-header__bottom {
-    padding-top: 95px;
-
-    box-shadow: inset 0 1px 0 0 #e7e7e7;
-
-    &--image {
-      min-height: 746px;
-      padding-top: 154px;
-    }
   }
 }
 
@@ -113,6 +110,14 @@
 
   .main-header__bottom {
     min-height: 255px;
+    padding-top: 95px;
+
+    box-shadow: inset 0 1px 0 0 #e7e7e7;
+
+    &--image {
+      min-height: 746px;
+      padding-top: 154px;
+    }
   }
 
   .main-header__title {
