@@ -9,11 +9,15 @@
     <header class="main-header">
       <div class="main-header__top">
         <nav class="main-nav">
-          <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин «Мишка»">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--logo">
+              <a class="main-header__logo" href="index.html">
+                <img class="main-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин «Мишка»">
+              </a>
+            </li>
             <li class="main-nav__item main-nav__item--primary">
               <a class="main-nav__link">Каталог товаров</a>
             </li>
@@ -34,9 +38,9 @@
             </li>
           </ul>
         </nav>
-        <p class="main-header__delivery">Бесплатная доставка по России</p>
       </div>
       <div class="main-header__bottom">
+        <p class="main-header__delivery">Бесплатная доставка по России</p>
         <h1 class="main-header__title">Каталог товаров</h1>
       </div>
     </header>

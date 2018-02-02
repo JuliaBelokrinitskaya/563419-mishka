@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-@mixin background-image($color, $url, $x: center, $y: top) {
+@mixin background-image($url, $x: center, $y: top, $color: null) {
   background-color: $color;
   background-image: url($url);
   background-repeat: no-repeat;
@@ -22,6 +22,8 @@
   width: $width-desktop-content;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @mixin visually-hidden {
