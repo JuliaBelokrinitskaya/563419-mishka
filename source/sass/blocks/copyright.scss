@@ -25,3 +25,13 @@
 .copyright__link:active .copyright__text {
   opacity: 0.3;
 }
+
+@media (min-width: $width-tablet) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
+
+  .copyright__logo {
+    margin-right: 0;
+  }
+}
