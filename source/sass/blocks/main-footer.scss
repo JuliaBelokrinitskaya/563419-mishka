@@ -1,9 +1,12 @@
 .main-footer {
-  // width: 320px - 60px;
   padding-right: $padding-content;
   padding-left: $padding-content;
 
   background-color: $color-bg-secondary;
+}
+
+.main-footer__logo {
+  display: none;
 }
 
 .main-footer__social {
