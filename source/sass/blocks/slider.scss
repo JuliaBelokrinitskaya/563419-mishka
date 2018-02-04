@@ -20,3 +20,16 @@
 .slider__control--previous {
   border-right: none;
 }
+
+@media (min-width: $width-tablet) {
+  .slider__controls {
+    width: 175px;
+    margin-top: -56px;
+    margin-left: auto;
+  }
+
+  .slider__control {
+    background-color: #cccccc; //TMP
+    border: none;
+  }
+}
