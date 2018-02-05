@@ -1,3 +1,24 @@
+// body {
+//   @include background-image("../img/prev-form.jpg", left);
+//   opacity: 0.5;
+// }
+
+// @media (min-width: $width-tablet) {
+//   body {
+//     width: $width-tablet;
+
+//     @include background-image("../img/prev-form-tablet.jpg", center, 0);
+//   }
+// }
+
+// @media (min-width: $width-desktop) {
+//   body {
+//     width: 100%;
+
+//     @include background-image("../img/prev-form-desktop.jpg", center, top);
+//   }
+// }
+
 html,
 body {
   height: 100%;

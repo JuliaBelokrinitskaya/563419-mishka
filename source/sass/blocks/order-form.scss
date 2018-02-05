@@ -15,7 +15,7 @@
 }
 
 .order-form__title {
-  margin-bottom: 26px;
+  margin: 0 0 26px;
 
   @include font-set($text-important, 16px, $weight-bold);
   text-transform: uppercase;
@@ -136,4 +136,159 @@
 .order-form__btn {
   width: 100%;
   padding: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .order-form {
+    padding: 0;
+  }
+
+  .order-form__fieldset {
+    padding-top: 50px;
+    padding-right: $padding-content-tablet;
+    padding-left: $padding-content-tablet;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+  }
+
+  .order-form__container {
+    padding-top: 49px;
+    padding-bottom: 27px;
+
+    background-color: $color-bg-secondary;
+  }
+
+  .order-form__fieldset--singleton {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+  }
+
+  .order-form__title {
+    width: 25%;
+    margin-top: 17px;
+    margin-bottom: 0;
+  }
+
+  .order-form__list,
+  .order-form__group {
+    width: 75%;
+  }
+
+  .order-form__list--columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .order-form__list--columns li {
+    width: 237px;
+  }
+
+  .order-form__label-radio,
+  .order-form__label-check {
+    min-height: 76px;
+    padding-left: 80px;
+
+    font-size: 19px;
+  }
+
+  .order-form__label-radio {
+    padding-top: 17px;
+  }
+
+  .order-form__label-check {
+    padding-top: 16px;
+  }
+
+  .order-form__field {
+    display: flex;
+
+    margin-bottom: 24px;
+  }
+
+  .order-form__label {
+    padding-top: 15px;
+    margin-right: 27px;
+
+    font-size: 19px;
+  }
+
+  .order-form__input {
+    padding-left: 15px;
+
+    font-size: 19px;
+
+    background-color: transparent;
+  }
+
+  .order-form__textarea {
+    padding-top: 12px;
+
+    font-size: 19px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    align-items: center;
+
+    padding-top: 25px;
+    padding-right: $padding-content-tablet;
+    padding-left: $padding-content-tablet;
+    margin-bottom: 50px;
+  }
+
+  .order-form__note {
+    order: 2;
+
+    margin-left: auto;
+    margin-bottom: 3px;
+
+    @include font-set($text-important, $lh-loose);
+  }
+
+  .order-form__btn {
+    width: 230px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .order-form__fieldset:not(.order-form__fieldset--singleton) {
+    padding-top: 49px;
+  }
+
+  .order-form__wrapper {
+    @include desktop-content-box;
+  }
+
+  .order-form__title {
+    box-sizing: border-box;
+    width: 175px;
+    padding-left: 62px;
+  }
+
+  .order-form__list {
+    flex-grow: 1;
+  }
+
+  .order-form__group {
+    width: 700px;
+  }
+
+  .order-form__list--columns {
+    justify-content: flex-start;
+  }
+
+  .order-form__list--columns li {
+    width: 263px;
+  }
+
+  .order-form__footer {
+    @include desktop-content-box;
+    width: 700px;
+    padding-top: 22px;
+  }
 }
