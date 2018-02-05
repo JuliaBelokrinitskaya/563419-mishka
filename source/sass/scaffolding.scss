@@ -1,5 +1,27 @@
-html {
-  min-height: 100%;
+// body {
+//   @include background-image("../img/prev-form.jpg", left);
+//   opacity: 0.5;
+// }
+
+// @media (min-width: $width-tablet) {
+//   body {
+//     width: $width-tablet;
+
+//     @include background-image("../img/prev-form-tablet.jpg", center, 0);
+//   }
+// }
+
+// @media (min-width: $width-desktop) {
+//   body {
+//     width: 100%;
+
+//     @include background-image("../img/prev-form-desktop.jpg", center, top);
+//   }
+// }
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -24,4 +46,10 @@ img {
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+@media (min-width: $width-tablet) {
+  body {
+    margin: 0 auto;
+  }
 }

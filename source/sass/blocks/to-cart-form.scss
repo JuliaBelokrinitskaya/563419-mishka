@@ -32,3 +32,9 @@
 .to-cart-form__input-radio:focus + .to-cart-form__label-radio {
   border-color: $color-primary;
 }
+
+@media (min-width: $width-tablet) {
+  .to-cart-form__label-radio {
+    width: 112px;
+  }
+}

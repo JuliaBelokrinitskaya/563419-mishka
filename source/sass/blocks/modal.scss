@@ -49,3 +49,26 @@
     border-color: $color-btn;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .modal {
+    width: 568px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .modal__title {
+    width: 100%;
+
+    @include font-set(30px, 57px);
+  }
+
+  .modal__text {
+    font-size: $text-important;
+  }
+
+  .modal__form {
+    box-sizing: border-box;
+    padding: 0 108px;
+  }
+}

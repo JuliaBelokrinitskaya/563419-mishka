@@ -1,7 +1,3 @@
-// .featured-product {
-//   width: 320px;
-// }
-
 .featured-product__wrapper {
   padding-top: 27px;
   padding-right: $padding-content;
@@ -67,6 +63,8 @@
   width: 260px;
   height: 315px;
   margin: 0 auto 23px;
+
+  background-color: $color-bg-secondary;
 }
 
 .featured-product__price {
@@ -74,4 +72,114 @@
 
   @include font-set($text-important, $lh-normal, $weight-bold);
   text-align: center;
+}
+
+@media (min-width: $width-tablet) {
+  .featured-product__wrapper {
+    position: relative;
+
+    padding-top: 45px;
+    padding-right: $padding-content-tablet;
+    padding-bottom: 70px;
+    padding-left: $padding-content-tablet;
+  }
+
+  .featured-product__header {
+    display: flex;
+
+    margin-bottom: 46px;
+  }
+
+  .featured-product__title {
+
+    margin-right: auto;
+
+    @include font-set($text-header-tablet, $lh-header-tablet);
+  }
+
+  .featured-product__label {
+    width: 124px;
+    margin-top: 11px;
+
+    line-height: 1;
+    text-align: center;
+  }
+
+  .featured-product__info,
+  .featured-product__ordering {
+    box-sizing: border-box;
+    padding-right: 44px;
+    margin-right: 333px;
+  }
+
+  .featured-product__info {
+    margin-bottom: 56px;
+  }
+
+  .featured-product__description {
+    margin-bottom: 36px;
+
+    @include font-set($text-important, $lh-loose);
+  }
+
+  .featured-product__photo {
+    position: absolute;
+    top: 152px;
+    right: $padding-content-tablet;
+
+    width: 333px;
+    height: 404px;
+    margin: 0;
+  }
+
+  .featured-product__price {
+    margin-bottom: 34px;
+
+    font-size: $text-important-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .featured-product__wrapper {
+    @include desktop-content-box;
+    padding-top: 123px;
+    padding-bottom: 95px;
+  }
+
+  .featured-product__title {
+    z-index: 5;
+
+    order: 2;
+
+    @include font-set($text-header-desktop, $lh-header-desktop);
+  }
+
+  .featured-product__label {
+    margin-top: 15px;
+    margin-right: 27px;
+    margin-left: 20px;
+  }
+
+  .featured-product__info {
+    margin-bottom: 110px;
+  }
+
+  .featured-product__description {
+    margin-bottom: 48px;
+  }
+
+  .featured-product__photo {
+    top: 71px;
+    right: 0;
+
+    width: 525px;
+    height: 636px;
+  }
+
+  .featured-product__info,
+  .featured-product__ordering {
+    padding-right: 58px;
+    margin-right: 525px;
+    margin-left: 175px;
+  }
 }

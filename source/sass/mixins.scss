@@ -1,9 +1,4 @@
-@mixin font($size, $line-height) {
-  font-size: $size;
-  line-height: $line-height;
-}
-
-@mixin font-set($size, $line-height, $weight) {
+@mixin font-set($size, $line-height, $weight: null) {
   font-size: $size;
   line-height: $line-height;
   font-weight: $weight;
@@ -16,11 +11,19 @@
   list-style: none;
 }
 
-@mixin background-image($color, $url, $x: center, $y: top) {
+@mixin background-image($url, $x: center, $y: top, $color: null) {
   background-color: $color;
   background-image: url($url);
   background-repeat: no-repeat;
   background-position: $x $y;
+}
+
+@mixin desktop-content-box {
+  width: $width-desktop-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @mixin visually-hidden {

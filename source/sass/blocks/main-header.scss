@@ -1,26 +1,24 @@
 .main-header__top {
+  box-sizing: border-box;
+
   background-color: $color-bg-primary;
 }
 
 .main-header__logo {
-  display: block;
+  display: flex;
 
   min-height: 79px;
-
-  text-align: center;
 }
 
 .main-header__logo-image {
   width: 86px;
   height: 35px;
-  margin-top: 22px;
-  margin-right: 2px;
+  margin: auto;
 }
 
 .main-header__bottom {
   box-sizing: border-box;
   min-height: 177px;
-  padding-top: 70px;
   padding-right: $padding-content;
   padding-left: $padding-content;
 
@@ -29,14 +27,97 @@
   &--image {
     min-height: 283px;
 
-    @include background-image(#f9f9f9, "../img/hero-mobile@1x.jpg", 50%, -17px);
+    @include background-image("../img/hero-mobile@1x.jpg", 50%, -17px, #f9f9f9);
   }
+}
+
+.main-header__delivery {
+  display: none;
+
+  padding: 18px 0 0;
+  margin: 0 0 -42px;
+
+  text-align: right;
 }
 
 .main-header__title {
   margin: 0;
+  padding-top: 70px;
 
   @include font-set($text-header, $lh-loose, $weight-bold);
   text-align: center;
   color: $color-header;
+}
+
+@media (min-width: $width-tablet) {
+  .main-header__logo {
+    height: 88px;
+  }
+
+  .main-header__bottom {
+    min-height: 226px;
+    padding-right: $padding-content-tablet;
+    padding-left: $padding-content-tablet;
+
+    box-shadow: inset 0 1px 0 0 #e7e7e7;
+  }
+
+  .main-header__bottom--image {
+    min-height: 746px;
+  }
+
+  .main-header__delivery {
+    display: block;
+  }
+
+  .main-header__title {
+    padding-top: 95px;
+  }
+
+  .main-header__bottom--image .main-header__title {
+    padding-top: 154px;
+  }
+}
+
+@media (min-width: $width-tablet) and (max-width: $width-desktop - 1px) {
+  .main-header__top {
+    height: 88px;
+    padding-right: $padding-content-tablet;
+    padding-left: $padding-content-tablet;
+  }
+
+  .main-header__logo-image {
+    width: 113px;
+    height: 46px;
+  }
+
+  .main-header__title {
+    @include font-set($text-header-tablet, $lh-header-tablet);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-header__top {
+    height: 88px;
+
+    @include desktop-content-box;
+  }
+
+  .main-header__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
+  .main-header__bottom:not(.main-header__bottom--image) {
+    min-height: 255px;
+    padding: 0;
+  }
+
+  .main-header__delivery {
+    @include desktop-content-box;
+  }
+
+  .main-header__title {
+    @include font-set($text-header-desktop, $lh-header-desktop);
+  }
 }

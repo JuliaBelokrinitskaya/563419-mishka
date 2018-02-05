@@ -1,4 +1,11 @@
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1250px;
+$width-desktop-content: 1050px;
+
+
 $padding-content: 30px;
+$padding-content-tablet: 50px;
 
 
 $font-primary: "Open Sans", "Arial", serif;
@@ -6,12 +13,17 @@ $font-primary: "Open Sans", "Arial", serif;
 $text-small: 13px;
 $text-primary: 15px;
 $text-important: 17px;
+$text-important-tablet: 20px;
 $text-section: 25px;
 $text-header: 27px;
+$text-header-tablet: 43px;
+$text-header-desktop: 53px;
 
 $lh-dense: 20px;
 $lh-normal: 24px;
 $lh-loose: 30px;
+$lh-header-tablet: 50px;
+$lh-header-desktop: 57px;
 
 $weight-normal: 400;
 $weight-bold: 700;

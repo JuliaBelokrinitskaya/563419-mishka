@@ -48,3 +48,31 @@
 
   width: 130px;
 }
+
+@media (min-width: $width-tablet) {
+  .category__list {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -119px;
+    padding: 0 $padding-content-tablet;
+  }
+
+  .category__item {
+    flex-grow: 1;
+  }
+
+  .category__link {
+    min-height: 119px;
+    padding-top: 27px;
+    padding-left: 36px;
+
+    @include font-set($text-important-tablet, $lh-loose);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .category__list {
+    @include desktop-content-box;
+  }
+}

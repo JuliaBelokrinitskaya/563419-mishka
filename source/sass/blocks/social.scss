@@ -1,3 +1,23 @@
 .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @include list-reset;
+}
+
+.social__item {
+  margin-right: 27px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-color: #cccccc; //TMP
 }
