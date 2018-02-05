@@ -5,3 +5,15 @@
 .main-content__video {
   margin: 0 auto 58px;
 }
+
+@media (min-width: $width-tablet) {
+  .main-content__video {
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-content__video {
+    margin-bottom: 105px;
+  }
+}
