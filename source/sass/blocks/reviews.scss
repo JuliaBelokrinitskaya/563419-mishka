@@ -27,6 +27,7 @@
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     padding-top: 77px;
     padding-right: $padding-content-tablet;
@@ -50,7 +51,6 @@
     order: -1;
 
     width: 175px;
-    height: 52px;
     margin-top: 2px;
     margin-left: auto;
   }
