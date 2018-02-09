@@ -4,8 +4,8 @@ $width-desktop: 1250px;
 $width-desktop-content: 1050px;
 
 
-$padding-content: 30px;
-$padding-content-tablet: 50px;
+$padding-content: 30px / $width-mobile * 100%;
+$padding-content-tablet: 50px / $width-tablet * 100%;
 
 
 $font-primary: "Open Sans", "Arial", serif;

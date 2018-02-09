@@ -8,6 +8,11 @@
   color: $color-important;
 
   outline: none;
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

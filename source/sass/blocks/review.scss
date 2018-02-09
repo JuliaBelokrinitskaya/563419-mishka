@@ -6,14 +6,19 @@
 }
 
 .review__text {
-  margin: 0 0 25px;
+  margin: 0 0 27px;
 }
 
 .review__author {
+  display: flex;
+  flex-direction: column;
+
   font-style: normal;
 }
 
 .review__author-name {
+  margin-bottom: 4px;
+
   @include font-set($text-important, $lh-normal, $weight-bold);
   color: $color-important;
 }
@@ -33,14 +38,7 @@
     @include font-set($text-important, $lh-loose);
   }
 
-  .review__author {
-    display: flex;
-    flex-direction: column;
-  }
-
   .review__author-name {
-    margin-bottom: 4px;
-
     font-size: 18px;
   }
 }

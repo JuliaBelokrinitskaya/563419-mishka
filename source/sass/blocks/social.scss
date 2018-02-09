@@ -7,17 +7,30 @@
 }
 
 .social__item {
-  margin-right: 27px;
+  margin-right: 40px;
 }
 
 .social__item:last-child {
-  margin-right: 0;
+  margin-right: 5px;
 }
 
 .social__link {
   display: block;
-  width: 32px;
-  height: 32px;
 
   background-color: #cccccc; //TMP
+}
+
+.social__link--instagram .social__icon {
+  width: 22px;
+  height: 21px;
+}
+
+.social__link--facebook .social__icon {
+  width: 15px;
+  height: 28px;
+}
+
+.social__link--twitter .social__icon {
+  width: 23px;
+  height: 20px;
 }

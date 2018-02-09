@@ -33,12 +33,15 @@
     padding-right: $padding-content-tablet;
     padding-bottom: 97px;
     padding-left: $padding-content-tablet;
+
+    @include background-image("../img/review@1x.jpg", 0, 0);
   }
 
   .reviews__title {
     order: -2;
 
     margin-bottom: 48px;
+    margin-left: -3px;
 
     @include font-set($text-header-tablet, $lh-header-tablet);
   }

@@ -8,6 +8,17 @@
   display: flex;
 
   min-height: 79px;
+
+  outline: none;
+
+  &:hover[href] {
+    opacity: 0.6;
+  }
+
+  &:focus[href],
+  &:active[href] {
+    opacity: 0.3;
+  }
 }
 
 .main-header__logo-image {

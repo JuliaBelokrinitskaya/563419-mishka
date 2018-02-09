@@ -3,11 +3,14 @@
 }
 
 .category__link {
+  position: relative;
+
   display: block;
 
   box-sizing: border-box;
   min-height: 103px;
   padding-top: 25px;
+  padding-bottom: 30px;
   padding-left: $padding-content;
 
   @include font-set(19px, $lh-normal, $weight-bold);
@@ -16,6 +19,11 @@
 
   background-color: $color-primary;
   outline: none;
+
+  &:hover {
+    padding-bottom: 35px;
+    margin-top: -5px;
+  }
 
   &:focus,
   &:active {
@@ -43,6 +51,40 @@
   }
 }
 
+.category__link::after {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  right: $padding-content;
+
+  width: 65px;
+  height: 65px;
+
+  opacity: 0.5;
+}
+
+.category__link:hover::after {
+  opacity: 0.7;
+}
+
+.category__link:focus::after,
+.category__link:active::after {
+  opacity: 0.3;
+}
+
+.category__link--interior::after {
+  margin-right: 5px;
+
+  @include background-image("../img/icon-interior.svg", right, 3px);
+}
+
+.category__link--toys::after {
+  margin-right: -2px;
+
+  @include background-image("../img/icon-toy.svg", right, 1px);
+}
+
 .category__link span {
   display: block;
 
@@ -65,9 +107,24 @@
   .category__link {
     min-height: 119px;
     padding-top: 27px;
+    padding-bottom: 32px;
     padding-left: 36px;
 
     @include font-set($text-important-tablet, $lh-loose);
+
+    &:hover {
+      padding-bottom: 37px;
+    }
+  }
+
+  .category__link--interior::after {
+    top: 28px;
+    right: 31px;
+  }
+
+  .category__link--toys::after {
+    top: 30px;
+    right: 36px;
   }
 }
 

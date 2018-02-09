@@ -10,7 +10,9 @@
 }
 
 .contacts__title {
-  margin: 0 0 27px;
+  position: relative;
+
+  margin: 0 0 27px -3px;
 
   @include font-set(18px, $lh-loose, $weight-bold);
   color: $color-header;
@@ -92,6 +94,21 @@
     margin-bottom: 49px;
 
     @include font-set($text-header-tablet, $lh-header-tablet);
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -16px;
+      right: 2px;
+
+      display: block;
+
+      width: 47px;
+      height: 81px;
+
+      @include background-image("../img/icon-flag.svg", 0, 0);
+    }
   }
 
   .contacts__info {
@@ -134,6 +151,12 @@
 
   .contacts__title {
     @include font-set($text-header-desktop, $lh-header-desktop);
+
+    &::after {
+      top: -8px;
+      right: auto;
+      left: -109px;
+    }
   }
 
   .contacts__info {
