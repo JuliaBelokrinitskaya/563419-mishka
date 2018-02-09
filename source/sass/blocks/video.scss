@@ -1,12 +1,26 @@
 .video {
-  width: 260px;
+  box-sizing: border-box;
+  width: 100%;
   padding-right: $padding-content;
   padding-left: $padding-content;
 }
 
+.video__wrapper {
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .video__title {
+  position: relative;
+
   margin: 0;
   padding-top: 24px;
+  padding-right: 30px;
   padding-bottom: 23px;
   padding-left: 90px;
 
@@ -15,12 +29,27 @@
 
   border: 1px solid $color-border-primary;
   border-bottom: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: calc(50% - 17px);
+    left: 33px;
+
+    width: 32px;
+    height: 32px;
+
+    @include background-image("../img/icon-video.svg", 0, 0);
+  }
 }
 
 .video__player {
   position: relative;
 
-  height: 150px;
+  min-height: 150px;
+
+  background-color: $color-bg-secondary;
 }
 
 .video__preview {
@@ -28,6 +57,7 @@
 
   width: 260px;
   height: 150px;
+  margin: 0 auto;
 }
 
 .video__btn-play {
@@ -39,9 +69,20 @@
   height: 100%;
   padding: 0;
 
-  background-color: transparent;
+  @include background-image("../img/icon-play.svg", center, center, transparent);
+  background-size: 101px 77px;
   border: 0;
   outline: none;
+
+  &:hover {
+    background-size: (1.2 * 101px) (1.2 * 77px);
+  }
+
+  &:focus,
+  &:active {
+    background-size: (0.8 * 101px) (0.8 * 77px);
+    opacity: 0.3;
+  }
 }
 
 .video__bottom {
@@ -62,21 +103,19 @@
 
 @media (min-width: $width-tablet) {
   .video {
-    display: flex;
-    flex-direction: column;
-
-    box-sizing: border-box;
-    width: 100%;
     padding-right: $padding-content-tablet;
     padding-left: $padding-content-tablet;
+  }
+
+  .video__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   .video__player {
     order: -1;
 
     min-height: 455px;
-
-    background-color: $color-bg-secondary;
   }
 
   .video__preview {
@@ -94,6 +133,11 @@
     padding-left: 105px;
 
     font-size: $text-important-tablet;
+
+    &::before {
+      top: 32px;
+      left: 41px;
+    }
   }
 
   .video__bottom {
@@ -112,10 +156,12 @@
 
 @media (min-width: $width-desktop) {
   .video {
+    @include desktop-content-box;
+  }
+
+  .video__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-
-    @include desktop-content-box;
   }
 
   .video__preview {
@@ -130,6 +176,11 @@
     padding-left: 78px;
 
     border: 1px solid $color-border-primary;
+
+    &::before {
+      top: 41px;
+      left: 79px;
+    }
   }
 
   .video__bottom {
