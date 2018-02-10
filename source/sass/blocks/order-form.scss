@@ -117,7 +117,7 @@
   }
 }
 
-.order-form__input-radio[checked] + .order-form__label-radio::after {
+.order-form__input-radio:checked + .order-form__label-radio::after {
   display: block;
 }
 
@@ -141,7 +141,7 @@
   }
 }
 
-.order-form__input-check[checked] + .order-form__label-check::after {
+.order-form__input-check:checked + .order-form__label-check::after {
   display: block;
 }
 
