@@ -82,19 +82,6 @@
 
     display: none;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: $color-interactive-primary;
-  }
-
-  &:active::before {
-    border-color: rgba($color-secondary, 0.3);
-  }
-
-  &:active::after {
-    display: block;
-  }
 }
 
 .order-form__label-radio {
@@ -117,10 +104,6 @@
   }
 }
 
-.order-form__input-radio:checked + .order-form__label-radio::after {
-  display: block;
-}
-
 .order-form__label-check {
   padding-top: 10px;
   padding-bottom: 14px;
@@ -139,6 +122,22 @@
     @include background-image("../img/icon-tick.svg", 0, 0);
     background-size: 22px 16px;
   }
+}
+
+.order-form__label-radio:hover::before,
+.order-form__label-check:hover::before {
+  border-color: $color-interactive-primary;
+}
+
+.order-form__label-radio:active::before,
+.order-form__label-check:active::before,
+.order-form__input-radio:focus + .order-form__label-radio::before,
+.order-form__input-check:focus + .order-form__label-check::before {
+  border-color: rgba($color-secondary, 0.3);
+}
+
+.order-form__input-radio:checked + .order-form__label-radio::after {
+  display: block;
 }
 
 .order-form__input-check:checked + .order-form__label-check::after {
@@ -172,6 +171,7 @@
   background-color: $color-bg-primary;
   border: 0;
   box-shadow: inset 0 -2px 0 $color-important;
+  outline: none;
 
   &:hover,
   &:focus,
