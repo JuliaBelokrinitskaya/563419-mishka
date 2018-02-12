@@ -160,9 +160,12 @@
     height: 72px;
   }
 
+  .main-header__bottom {
+    padding: 0;
+  }
+
   .main-header__bottom:not(.main-header__bottom--image) {
     min-height: 255px;
-    padding: 0;
   }
 
   .main-header__bottom::after {
