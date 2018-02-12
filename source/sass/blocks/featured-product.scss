@@ -61,10 +61,14 @@
 
 .featured-product__photo {
   width: 260px;
-  height: 315px;
+  height: auto;
   margin: 0 auto 23px;
 
   background-color: $color-bg-secondary;
+
+  picture {
+    display: flex;
+  }
 }
 
 .featured-product__price {
@@ -125,6 +129,12 @@
     width: 50%;
     height: 404px;
     margin: 10px 0 0;
+
+    img {
+      width: 333px;
+      height: auto;
+      margin: auto;
+    }
   }
 
   .featured-product__ordering {
@@ -167,6 +177,11 @@
     width: 525px;
     height: 636px;
     margin-top: -158px;
+
+    img {
+      width: 525px;
+      height: auto;
+    }
   }
 
   .featured-product__info,

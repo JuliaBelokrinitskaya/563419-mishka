@@ -41,3 +41,40 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin top-zigzag {
+  content: "";
+
+  position: absolute;
+  top: -6px;
+  left: 0;
+
+  width: 100%;
+  height: 6.5px;
+
+  @include background-image("../img/bg-zigzag-line.svg", center, top);
+  background-size: auto 6.5px;
+  background-repeat: repeat-x;
+
+  transform: rotate(180deg);
+
+  @media (min-width: $width-tablet) {
+    top: -19px;
+
+    height: 17px;
+
+    background-size: 768px 17px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: -23px;
+    left: 0;
+    right: 0;
+
+    @include desktop-content-box;
+    height: 23px;
+    margin: auto;
+
+    background-size: 1050px 23px;
+  }
+}

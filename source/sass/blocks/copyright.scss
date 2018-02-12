@@ -9,7 +9,18 @@
 
   outline: none;
 
-  &:focus,
+  path {
+    fill: $color-primary;
+  }
+
+  &:hover path {
+    fill: $color-interactive-secondary;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -24,11 +35,6 @@
   width: 27px;
   height: 34px;
   margin-right: 2px;
-}
-
-.copyright__link:focus .copyright__text,
-.copyright__link:active .copyright__text {
-  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {

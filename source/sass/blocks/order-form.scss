@@ -82,19 +82,6 @@
 
     display: none;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: $color-interactive-primary;
-  }
-
-  &:active::before {
-    border-color: rgba($color-secondary, 0.3);
-  }
-
-  &:active::after {
-    display: block;
-  }
 }
 
 .order-form__label-radio {
@@ -117,10 +104,6 @@
   }
 }
 
-.order-form__input-radio[checked] + .order-form__label-radio::after {
-  display: block;
-}
-
 .order-form__label-check {
   padding-top: 10px;
   padding-bottom: 14px;
@@ -141,7 +124,23 @@
   }
 }
 
-.order-form__input-check[checked] + .order-form__label-check::after {
+.order-form__label-radio:hover::before,
+.order-form__label-check:hover::before {
+  border-color: $color-interactive-primary;
+}
+
+.order-form__label-radio:active::before,
+.order-form__label-check:active::before,
+.order-form__input-radio:focus + .order-form__label-radio::before,
+.order-form__input-check:focus + .order-form__label-check::before {
+  border-color: rgba($color-secondary, 0.3);
+}
+
+.order-form__input-radio:checked + .order-form__label-radio::after {
+  display: block;
+}
+
+.order-form__input-check:checked + .order-form__label-check::after {
   display: block;
 }
 
@@ -158,7 +157,14 @@
   color: $color-important;
 }
 
+.order-form__group {
+  position: relative;
+}
+
 .order-form__input {
+  position: relative;
+  z-index: 2;
+
   box-sizing: border-box;
   width: 100%;
   height: 52px;
@@ -169,15 +175,39 @@
   font-family: inherit;
   color: $color-paragraph;
 
-  background-color: $color-bg-primary;
+  background-color: transparent;
   border: 0;
   box-shadow: inset 0 -2px 0 $color-important;
+  outline: none;
 
   &:hover,
   &:focus,
   &:active {
     box-shadow: inset 0 -2px 0 $color-interactive-primary;
   }
+}
+
+.order-form__icon {
+  position: absolute;
+  top: 11px;
+  right: 5px;
+
+  path {
+    fill: #cccccc;
+  }
+}
+
+.order-form__input--phone + .order-form__icon {
+  margin-right: 3px;
+}
+
+.order-form__input:hover + .order-form__icon path {
+  fill: $color-interactive-primary;
+}
+
+.order-form__input:focus + .order-form__icon path,
+.order-form__input:active + .order-form__icon path {
+  fill: rgba($color-interactive-primary, 0.3);
 }
 
 .order-form__textarea {
@@ -363,8 +393,10 @@
     padding-left: 15px;
 
     font-size: 19px;
+  }
 
-    background-color: transparent;
+  .order-form__icon {
+    right: 22px;
   }
 
   .order-form__textarea {
@@ -426,6 +458,10 @@
 
   .order-form__list--columns li {
     width: 263px;
+  }
+
+  .order-form__icon {
+    right: 5px;
   }
 
   .order-form__footer {
