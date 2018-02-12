@@ -144,6 +144,21 @@
   display: block;
 }
 
+.order-form__input-radio:disabled + .order-form__label-radio,
+.order-form__input-check:disabled + .order-form__label-check {
+  color: rgba($color-secondary, 0.3);
+}
+
+.order-form__input-radio:disabled + .order-form__label-radio::before,
+.order-form__input-check:disabled + .order-form__label-check::before {
+  border-color: rgba($color-secondary, 0.3);
+}
+
+.order-form__input-radio:disabled + .order-form__label-radio::after,
+.order-form__input-check:disabled + .order-form__label-check::after {
+  display: none;
+}
+
 .order-form__field {
   margin: 0 0 20px;
 }
