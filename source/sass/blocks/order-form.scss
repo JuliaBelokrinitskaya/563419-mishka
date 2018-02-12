@@ -157,7 +157,14 @@
   color: $color-important;
 }
 
+.order-form__group {
+  position: relative;
+}
+
 .order-form__input {
+  position: relative;
+  z-index: 2;
+
   box-sizing: border-box;
   width: 100%;
   height: 52px;
@@ -168,7 +175,7 @@
   font-family: inherit;
   color: $color-paragraph;
 
-  background-color: $color-bg-primary;
+  background-color: transparent;
   border: 0;
   box-shadow: inset 0 -2px 0 $color-important;
   outline: none;
@@ -178,6 +185,29 @@
   &:active {
     box-shadow: inset 0 -2px 0 $color-interactive-primary;
   }
+}
+
+.order-form__icon {
+  position: absolute;
+  top: 11px;
+  right: 5px;
+
+  path {
+    fill: #cccccc;
+  }
+}
+
+.order-form__input--phone + .order-form__icon {
+  margin-right: 3px;
+}
+
+.order-form__input:hover + .order-form__icon path {
+  fill: $color-interactive-primary;
+}
+
+.order-form__input:focus + .order-form__icon path,
+.order-form__input:active + .order-form__icon path {
+  fill: rgba($color-interactive-primary, 0.3);
 }
 
 .order-form__textarea {
@@ -363,8 +393,10 @@
     padding-left: 15px;
 
     font-size: 19px;
+  }
 
-    background-color: transparent;
+  .order-form__icon {
+    right: 22px;
   }
 
   .order-form__textarea {
@@ -426,6 +458,10 @@
 
   .order-form__list--columns li {
     width: 263px;
+  }
+
+  .order-form__icon {
+    right: 5px;
   }
 
   .order-form__footer {

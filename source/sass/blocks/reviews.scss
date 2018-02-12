@@ -24,6 +24,10 @@
 
 
 @media (min-width: $width-tablet) {
+  .reviews {
+    min-height: 542px;
+  }
+
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +39,11 @@
     padding-left: $padding-content-tablet;
 
     @include background-image("../img/review@1x.jpg", 0, 0);
+    background-size: auto 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {

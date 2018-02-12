@@ -17,20 +17,36 @@
 .social__link {
   display: block;
 
-  background-color: #cccccc; //TMP
+  outline: none;
+
+  path {
+    fill: #221f1f;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $color-interactive-secondary;
+  }
+
+  &:active path {
+    fill: rgba($color-interactive-secondary, 0.3);
+  }
 }
 
 .social__link--instagram .social__icon {
   width: 22px;
   height: 21px;
+  margin-top: 10px;
 }
 
 .social__link--facebook .social__icon {
   width: 15px;
   height: 28px;
+  margin-top: 6px;
 }
 
 .social__link--twitter .social__icon {
   width: 23px;
   height: 20px;
+  margin-top: 10px;
 }

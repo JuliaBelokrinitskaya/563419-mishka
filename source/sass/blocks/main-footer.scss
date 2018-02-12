@@ -40,6 +40,21 @@
   .main-footer__logo {
     display: block;
     width: 30%;
+
+    outline: none;
+
+    g {
+      fill: #231f20;
+    }
+
+    &[href]:hover g,
+    &[href]:focus g {
+      fill: $color-interactive-secondary;
+    }
+
+    &[href]:active g {
+      fill: rgba($color-interactive-secondary, 0.3);
+    }
   }
 
   .main-footer__logo-image {

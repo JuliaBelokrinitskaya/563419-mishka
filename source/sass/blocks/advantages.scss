@@ -1,7 +1,15 @@
+.advantages {
+  position: relative;
+}
+
 .advantages__wrapper {
   padding-top: 27px;
   padding-right: $padding-content;
   padding-left: $padding-content;
+}
+
+.advantages__wrapper::before {
+  @include top-zigzag;
 }
 
 .advantages__title {
