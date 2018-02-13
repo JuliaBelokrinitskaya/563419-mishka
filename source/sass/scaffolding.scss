@@ -1,5 +1,5 @@
 // body {
-//   @include background-image("../img/prev-form.jpg", left);
+//   @include background-image("../img/prev-index.jpg", left);
 //   opacity: 0.5;
 // }
 
@@ -7,7 +7,7 @@
 //   body {
 //     width: $width-tablet;
 
-//     @include background-image("../img/prev-form-tablet.jpg", center, 0);
+//     @include background-image("../img/prev-index-tablet.jpg", center, 0);
 //   }
 // }
 
@@ -15,12 +15,12 @@
 //   body {
 //     width: 100%;
 
-//     @include background-image("../img/prev-form-desktop.jpg", center, top);
+//     @include background-image("../img/prev-index-desktop.jpg", center, top);
 //   }
 // }
 
-html,
-body {
+
+html {
   height: 100%;
 }
 
@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  min-width: 320px;
+  min-width: $width-mobile;
   min-height: 100vh;
   margin: 0;
 
@@ -42,6 +42,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.sprite {
+  display: none;
 }
 
 .visually-hidden {

@@ -76,13 +76,13 @@
 .category__link--interior::after {
   margin-right: 5px;
 
-  @include background-image("../img/icon-interior.svg", right, 3px);
+  @include background-image("../img/interior.svg", right, 3px);
 }
 
 .category__link--toys::after {
   margin-right: -2px;
 
-  @include background-image("../img/icon-toy.svg", right, 1px);
+  @include background-image("../img/toy.svg", right, 1px);
 }
 
 .category__link span {

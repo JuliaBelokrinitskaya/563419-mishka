@@ -105,13 +105,13 @@
   .main-nav--opened .main-nav__toggle {
     display: block;
 
-    @include background-image("../img/icon-menu-close.svg", 0, 0, transparent);
+    @include background-image("../img/menu-close.svg", 0, 0, transparent);
   }
 
   .main-nav--closed .main-nav__toggle {
     display: block;
 
-    @include background-image("../img/icon-menu-open.svg", 0, 3px, transparent);
+    @include background-image("../img/menu-open.svg", 0, 3px, transparent);
   }
 
   .main-nav--closed .main-nav__item {

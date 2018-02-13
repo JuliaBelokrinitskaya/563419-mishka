@@ -250,9 +250,9 @@
 
 .order-form__input::placeholder,
 .order-form__textarea::placeholder {
-  color: $color-paragraph;
+  color: rgba($color-paragraph, 0.3);
 
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .order-form__footer {
@@ -445,6 +445,11 @@
 }
 
 @media (min-width: $width-desktop) {
+  .order-form__fieldset {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .order-form__fieldset:not(.order-form__fieldset--singleton) {
     padding-top: 49px;
   }

@@ -3,6 +3,9 @@
 }
 
 .main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
   padding-right: $padding-content;
   padding-left: $padding-content;
 }
@@ -27,6 +30,7 @@
 @media (min-width: $width-tablet) {
   .main-footer__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 
