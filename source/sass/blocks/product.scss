@@ -91,16 +91,14 @@
 
   outline: none;
 
-  path {
-    fill: #d3d2d2;
-  }
+  fill: #d3d2d2;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: $color-primary;
   }
 
-  &:active path {
+  &:active {
     fill: rgba($color-primary, 0.3);
   }
 }

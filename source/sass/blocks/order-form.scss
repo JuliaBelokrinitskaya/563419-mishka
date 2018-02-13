@@ -207,21 +207,19 @@
   top: 11px;
   right: 5px;
 
-  path {
-    fill: #cccccc;
-  }
+  fill: #cccccc;
 }
 
 .order-form__input--phone + .order-form__icon {
   margin-right: 3px;
 }
 
-.order-form__input:hover + .order-form__icon path {
+.order-form__input:hover + .order-form__icon {
   fill: $color-interactive-primary;
 }
 
-.order-form__input:focus + .order-form__icon path,
-.order-form__input:active + .order-form__icon path {
+.order-form__input:focus + .order-form__icon,
+.order-form__input:active + .order-form__icon {
   fill: rgba($color-interactive-primary, 0.3);
 }
 

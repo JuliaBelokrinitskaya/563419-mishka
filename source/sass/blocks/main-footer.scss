@@ -47,16 +47,14 @@
 
     outline: none;
 
-    g {
-      fill: #231f20;
-    }
+    fill: #231f20;
 
-    &[href]:hover g,
-    &[href]:focus g {
+    &[href]:hover,
+    &[href]:focus {
       fill: $color-interactive-secondary;
     }
 
-    &[href]:active g {
+    &[href]:active {
       fill: rgba($color-interactive-secondary, 0.3);
     }
   }

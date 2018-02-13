@@ -19,16 +19,15 @@
 
   outline: none;
 
-  path {
-    fill: #221f1f;
-  }
+  fill: #221f1f;
 
-  &:hover path,
-  &:focus path {
+
+  &:hover,
+  &:focus {
     fill: $color-interactive-secondary;
   }
 
-  &:active path {
+  &:active {
     fill: rgba($color-interactive-secondary, 0.3);
   }
 }
