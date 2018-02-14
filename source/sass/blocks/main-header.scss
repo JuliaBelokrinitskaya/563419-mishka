@@ -194,7 +194,6 @@
 
   .main-header__title {
     @include desktop-content-box;
-
     @include font-set($text-header-desktop, $lh-header-desktop);
   }
 }
