@@ -61,6 +61,8 @@
   @include font-set($text-important, 18px, $weight-bold);
   color: $color-important;
 
+  cursor: pointer;
+
   &::before {
     content: "";
 

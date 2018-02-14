@@ -73,6 +73,7 @@
   background-size: 101px 77px;
   border: 0;
   outline: none;
+  cursor: pointer;
 
   &:hover {
     background-size: (1.2 * 101px) (1.2 * 77px);
@@ -184,6 +185,8 @@
   }
 
   .video__bottom {
+    z-index: 1;
+
     box-sizing: border-box;
     width: 368px;
     padding-right: 58px;

@@ -12,6 +12,7 @@
     </div>
     <header class="main-header">
       <div class="main-header__top">
+        <!-- Переключение открытого и закрытого состояний: .main-nav--opened / .main-nav--closed -->
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -59,7 +60,7 @@
       </div>
       <div class="main-header__bottom main-header__bottom--image">
         <p class="main-header__delivery">Бесплатная доставка по России</p>
-        <h1 class="main-header__title">Милые штуки ручной<br> работы для дома</h1>
+        <h1 class="main-header__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
     </header>
 
@@ -104,15 +105,12 @@
           </div>
           <div class="featured-product__photo">
             <picture>
-              <source media="(min-width: 1150px)"
-                      srcset="img/triple-set-desktop@1x.jpg 1x,
-                              img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                      srcset="img/triple-set-tablet@1x.jpg 1x,
-                              img/triple-set-tablet@2x.jpg 2x">
-              <img  src="img/triple-set-mobile@1x.jpg"
-                    srcset="img/triple-set-mobile@2x.jpg 2x"
-                    width="260" height="315" alt="Вязаные корзинки трех размеров">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img  src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки трех размеров">
             </picture>
           </div>
           <footer class="featured-product__ordering">
@@ -179,15 +177,12 @@
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.320894616398647!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1518476540074" width="320" height="457" allowfullscreen></iframe>
           <picture>
-            <source media="(min-width: 1150px)"
-                    srcset="img/map-desktop@1x.jpg 1x,
-                            img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                    srcset="img/map-tablet@1x.jpg 1x,
-                            img/map-tablet@2x.jpg 2x">
-            <img  src="img/map-mobile@1x.jpg"
-                  srcset="img/map-mobile@2x.jpg 2x"
-                  width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img  src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
           </picture>
         </div>
         <a class="contacts__btn btn" href="feedback.html">Напишите нам</a>
