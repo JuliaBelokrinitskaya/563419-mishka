@@ -1,5 +1,6 @@
 .main-content {
-  flex: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .main-content__video {

@@ -32,27 +32,27 @@
   color: $color-important;
 
   &--eco {
-    @include background-image("../img/icon-feature-flower.svg", 9px, 0);
+    @include background-image("../img/feature-flower.svg", 9px, 0);
   }
 
   &--price {
-    @include background-image("../img/icon-feature-money.svg", 0, 0);
+    @include background-image("../img/feature-money.svg", 0, 0);
   }
 
   &--likes {
-    @include background-image("../img/icon-feature-heart.svg", 8px, 6px);
+    @include background-image("../img/feature-heart.svg", 8px, 6px);
   }
 
   &--handmade {
-    @include background-image("../img/icon-feature-ball.svg", 3px, 3px);
+    @include background-image("../img/feature-ball.svg", 3px, 3px);
   }
 
   &--domestic {
-    @include background-image("../img/icon-feature-rocket.svg", -5px, 3px);
+    @include background-image("../img/feature-rocket.svg", -5px, 3px);
   }
 
   &--gift {
-    @include background-image("../img/icon-feature-gift.svg", 3px, 2px);
+    @include background-image("../img/feature-gift.svg", 3px, 2px);
   }
 }
 

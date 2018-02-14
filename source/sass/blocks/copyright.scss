@@ -9,11 +9,9 @@
 
   outline: none;
 
-  path {
-    fill: $color-primary;
-  }
+  fill: $color-primary;
 
-  &:hover path {
+  &:hover {
     fill: $color-interactive-secondary;
   }
 

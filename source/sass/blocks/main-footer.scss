@@ -3,6 +3,9 @@
 }
 
 .main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
   padding-right: $padding-content;
   padding-left: $padding-content;
 }
@@ -27,6 +30,7 @@
 @media (min-width: $width-tablet) {
   .main-footer__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 
@@ -43,16 +47,14 @@
 
     outline: none;
 
-    g {
-      fill: #231f20;
-    }
+    fill: #231f20;
 
-    &[href]:hover g,
-    &[href]:focus g {
+    &[href]:hover,
+    &[href]:focus {
       fill: $color-interactive-secondary;
     }
 
-    &[href]:active g {
+    &[href]:active {
       fill: rgba($color-interactive-secondary, 0.3);
     }
   }

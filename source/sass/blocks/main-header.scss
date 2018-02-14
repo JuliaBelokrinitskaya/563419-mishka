@@ -34,7 +34,7 @@
 .main-header__logo-image {
   width: 86px;
   height: 35px;
-  margin: auto;
+  margin: 22px auto;
 }
 
 .main-header__bottom {
@@ -158,11 +158,15 @@
   .main-header__logo-image {
     width: 149px;
     height: 72px;
+    margin-top: 10px;
+  }
+
+  .main-header__bottom {
+    padding: 0;
   }
 
   .main-header__bottom:not(.main-header__bottom--image) {
     min-height: 255px;
-    padding: 0;
   }
 
   .main-header__bottom::after {

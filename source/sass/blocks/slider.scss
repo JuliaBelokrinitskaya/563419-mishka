@@ -43,13 +43,13 @@
   border-right: none;
 
   &::after {
-    @include background-image("../img/icon-left-arrow.svg", center, 0);
+    @include background-image("../img/left-arrow.svg", center, 0);
   }
 }
 
 .slider__control--next {
   &::after {
-    @include background-image("../img/icon-right-arrow.svg", center, 0);
+    @include background-image("../img/right-arrow.svg", center, 0);
   }
 }
 
