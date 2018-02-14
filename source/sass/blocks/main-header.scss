@@ -62,7 +62,7 @@
 .main-header__delivery {
   display: none;
 
-  padding: 18px 0 0;
+  padding: 18px 0 0 50%;
   margin: 0 0 -42px;
 
   text-align: right;
@@ -71,6 +71,7 @@
 .main-header__title {
   margin: 0;
   padding-top: 70px;
+  padding-bottom: 70px;
 
   @include font-set($text-header, $lh-loose, $weight-bold);
   text-align: center;
@@ -187,9 +188,13 @@
 
   .main-header__delivery {
     @include desktop-content-box;
+    box-sizing: border-box;
+    padding-left: $width-desktop / 2;
   }
 
   .main-header__title {
+    @include desktop-content-box;
+
     @include font-set($text-header-desktop, $lh-header-desktop);
   }
 }

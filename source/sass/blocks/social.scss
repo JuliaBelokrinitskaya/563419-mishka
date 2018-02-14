@@ -1,17 +1,16 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 
   @include list-reset;
 }
 
 .social__item {
-  margin-right: 40px;
-}
-
-.social__item:last-child {
-  margin-right: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .social__link {

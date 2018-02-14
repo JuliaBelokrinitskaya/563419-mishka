@@ -73,10 +73,7 @@
 
   .advantages__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-
-    height: 465px;
   }
 
   .advantages__item {
@@ -85,6 +82,16 @@
     padding-right: 6%;
 
     @include font-set($text-important-tablet, 22px);
+
+    &--price,
+    &--domestic {
+      order: 1;
+    }
+
+    &--likes,
+    &--gift {
+      order: 2;
+    }
   }
 }
 
