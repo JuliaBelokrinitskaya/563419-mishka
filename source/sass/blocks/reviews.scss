@@ -38,7 +38,7 @@
     padding-bottom: 97px;
     padding-left: $padding-content-tablet;
 
-    @include background-image("../img/review@1x.jpg", 0, 0);
+    @include background-image("../img/review@1x.jpg", 0, 0, $color-bg-primary);
     background-size: auto 457px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
