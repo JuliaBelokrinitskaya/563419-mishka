@@ -16,6 +16,9 @@
   background-color: $color-bg-primary;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  animation-name: show-up;
+  animation-duration: 0.3s;
 }
 
 .modal--show {
@@ -84,5 +87,21 @@
   .modal__form {
     box-sizing: border-box;
     padding: 0 108px;
+  }
+}
+
+@keyframes show-up {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
