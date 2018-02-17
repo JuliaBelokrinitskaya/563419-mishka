@@ -6,6 +6,8 @@
 }
 
 .video__wrapper {
+  border: 1px solid $color-border-primary;
+
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
@@ -26,9 +28,6 @@
 
   @include font-set($text-important, $lh-normal, $weight-bold);
   color: $color-header;
-
-  border: 1px solid $color-border-primary;
-  border-bottom: none;
 
   &::before {
     content: "";
@@ -91,9 +90,6 @@
   padding-right: 34px;
   padding-bottom: 33px;
   padding-left: 34px;
-
-  border: 1px solid $color-border-primary;
-  border-top: none;
 }
 
 .video__description {
@@ -163,6 +159,7 @@
   .video__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .video__preview {
@@ -171,7 +168,7 @@
 
   .video__title {
     box-sizing: border-box;
-    width: 368px;
+    width: 366px;
     padding-top: 94px;
     padding-right: 55px;
     padding-left: 78px;

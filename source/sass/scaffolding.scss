@@ -29,9 +29,3 @@ img {
 .visually-hidden {
   @include visually-hidden;
 }
-
-@media (min-width: $width-tablet) {
-  body {
-    margin: 0 auto;
-  }
-}
