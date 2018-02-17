@@ -73,7 +73,7 @@
 
   display: flex;
 
-  height: 457px;
+  min-height: 457px;
   margin-bottom: 39px;
 }
 
@@ -208,6 +208,10 @@
 
   .contacts__item {
     width: 100%;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
   }
 
   .contacts__map {
